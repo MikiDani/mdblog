@@ -1,0 +1,1 @@
+<div class="row bottom p-3 text-center rounded-bottom mb-2"><strong><span>MD Blog portal</span> | <span class="link"><a href="#">Jump to the top of the page</a></span><strong></div>
