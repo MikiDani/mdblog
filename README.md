@@ -14,7 +14,7 @@ A weboldal két fő részre van osztva.
 Blog Portál: Ez az felület az összes blogot és felhasználót összefogja. Itt betudunk jelentkezni, az összes blogról és felhasználóról tudhatunk meg információkat.
 Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó, mert a kedvelt blogjainkat egyből eltudjuk érni egy linkel. Nem kell külön a Portál oldalra menni és onnan elérni a tartalmat.
 
-# MySQL szerkezet: a bacend / info.txt-ben szépen olvashatóak az információk.
+# MySQL szerkezet: mdblog
 
 | users         | blogbody      | blogentries       | blogcomments  |
 | ------------- |:-------------:|:-----------------:|:-------------:|
@@ -29,8 +29,8 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 # REST API Endpoints:
 
 ## USERS
-| Query | Method | Token? | What is it doing |
-| ------------- |:-------------:|:-----------------:|:-------------:|
+| Query         | Method        | Token?            | What is it doing |
+| ------------- |:-------------:|:-----------------:|:----------------:|
 | ?users=login               | POST        |      | add user token key |
 | ?users=ins                 | POST        |      | add user in the table. |
 | ?users=allusernames        | GET         |      | returns it all user names. |
@@ -78,9 +78,6 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 ### TEST USERS:
 | username    | email         | password          |
 | ----------- |:-------------:|:-----------------:|
-| admin       | admin@mdblog.com		 | 123456 |
-| Dániel      | daniel@mdblog.com		 | abcdef |
-| SteveJonson |	stevejonson@mdblog.com	 | 123456 |
-| DougieAdams |	adams@mdblog.com		 | 123456 |
-| Charles     |	charles@mdblog.com		 | 123456 |
-| Mike95      |	mike95@freeweb.com		 | 123456 |
+| admin       | admin@admin.hu 		     | 123456 |
+| Daniel      | daniel@daniel.hu		 | 123456 |
+| Gaborka     |	gaborka@gaborka.hu  	 | 123456 |

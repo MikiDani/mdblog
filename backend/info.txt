@@ -92,9 +92,8 @@ imglink                 bgimg
 
 ### TEST USERS:
 
-admin			admin@mdblog.com		123456
-Dániel			daniel@mdblog.com		abcdef
-SteveJonson		stevejonson@mdblog.com	123456
-DougieAdams		adams@mdblog.com		123456
-Charles			charles@mdblog.com		123456
-Mike95			mike95@freeweb.com		123456
+| username    | email         | password          |
+| ----------- |:-------------:|:-----------------:|
+| admin       | admin@admin.hu 		     | 123456 |
+| Daniel      | daniel@daniel.hu		 | 123456 |
+| Gaborka     |	gaborka@gaborka.hu  	 | 123456 |
