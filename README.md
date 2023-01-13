@@ -3,7 +3,8 @@
 Az MD Blog egy weboldal alapú blog portál. 
 Az oldalnak a backend részéhez egy REST API alkalmazást készítettem ami JSON formátumban kommunikál. A kódot php nyelven írtam, és mysql-t használ az adatbázis tárolására. 
 A frontend részét html-php nyelven írtam, ami mellett Bootstrap és jQuery keretrendszereket használtam.
-Letöltéskor a backend/session_url.php-ban az elérési utat bekell álítani!
+Letöltéskor a backend/session_url.php-ban az elérési utat bekell álítani!<br>
+Leírás <a href="backend/info.txt" target="_blank">itt</a> található txt-ben.
 
 # Weboldal felépítése:
 
