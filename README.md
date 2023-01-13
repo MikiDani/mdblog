@@ -4,13 +4,13 @@ Az MD Blog egy weboldal alapú blog portál.
 Az oldalnak a backend részéhez egy REST API alkalmazást készítettem ami JSON formátumban kommunikál. A kódot php nyelven írtam, és mysql-t használ az adatbázis tárolására. 
 A frontend részét html-php nyelven írtam, ami mellett Bootstrap és jQuery keretrendszereket használtam.
 Letöltéskor a backend/session_url.php-ban az elérési utat bekell álítani!<br>
-Leírás <a href="backend/info.txt" target="_blank">itt</a> található txt-ben.
+Leírás <a href="backend/info.txt" target="_blank">itt</a> található txt-ben. ./backend/info.txt
 
 # Weboldal felépítése:
 
 A weboldal két fő részre van osztva.
-•	Blog Portal – index.php
-•	Blog – blog.php?usernameCode
+• Blog Portal – index.php
+• Blog – blog.php?usernameCode
 Blog Portál: Ez az felület az összes blogot és felhasználót összefogja. Itt betudunk jelentkezni, az összes blogról és felhasználóról tudhatunk meg információkat.
 Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó, mert a kedvelt blogjainkat egyből eltudjuk érni egy linkel. Nem kell külön a Portál oldalra menni és onnan elérni a tartalmat.
 
@@ -44,15 +44,15 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | ?users=oneuser             | POST        |      | returns user datas. Based on userid. |
 | ?users=rankmod             | POST        |  Y   | When the user is admin, the rank of other users can be changed. |
 
-------------------------------
-| ?users=login  | responses  |
-|----------------------------|
-| 200   Ok! Token code back  |
-| 201   Ok! Inserted         |
-| 408   Request Timeout      |
-| 401   Unautorized          |
-| 400   Bad Request          |
-------------------------------
+------------------------------<br>
+| ?users=login  | responses  |<br>
+|----------------------------|<br>
+| 200   Ok! Token code back  |<br>
+| 201   Ok! Inserted         |<br>
+| 408   Request Timeout      |<br>
+| 401   Unautorized          |<br>
+| 400   Bad Request          |<br>
+------------------------------<br>
 
 ## BLOGS:
 

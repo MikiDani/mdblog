@@ -7,8 +7,8 @@ A frontend részét html-php nyelven írtam, ami mellett Bootstrap és jQuery ke
 # Weboldal felépítése:
 
 A weboldal két fő részre van osztva.
-•	Blog Portal – index.php
-•	Blog – blog.php?usernameCode
+• Blog Portal – index.php
+• Blog – blog.php?usernameCode
 Blog Portál: Ez az felület az összes blogot és felhasználót összefogja. Itt betudunk jelentkezni, az összes blogról és felhasználóról tudhatunk meg információkat.
 
 Három rang van amit az admin tud változtatni:
