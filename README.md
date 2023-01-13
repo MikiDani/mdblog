@@ -14,16 +14,16 @@ Blog Portál: Ez az felület az összes blogot és felhasználót összefogja. I
 Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó, mert a kedvelt blogjainkat egyből eltudjuk érni egy linkel. Nem kell külön a Portál oldalra menni és onnan elérni a tartalmat.
 
 # MySQL szerkezet: a bacend / info.txt-ben szépen olvashatóak az információk.
--------------			-------------			--------------			 --------------
-users:					blogbody:				blogentries:			 blogcomments:
--------------			-------------			--------------			 --------------
-id 						blogid     ─────┐		entrieid	─────┐		 commentid
-username				userid			└─────  blogid			 │		 userid
-useremail				blogname				entrietitle		 └─────	 entrieid
-userpassword			blogtitle				entriebody				 commenttext
-userrank				categoryid				entrieepoch				 commentepoch
-userinfo				startepoch				
-imglink					bgimg					
+
+| users | blogbody | blogentries | blogcomments |
+| ----- |:--------:|:-----------:|:------------:|
+|id 			|blogid		    |entrieid           |commentid      |
+|username		|userid			|blogid			    │userid         |
+|useremail		|blogname		|entrietitle	    |entrieid       |
+|userpassword	|blogtitle		|entriebody			|commenttext    |
+|userrank		|categoryid		|entrieepoch		|commentepoch   |
+|userinfo		|startepoch		|		            |               |
+|imglink	    |bgimg			|		            |               |
 
 # REST API Endpoints:
 

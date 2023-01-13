@@ -1,18 +1,23 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // you don't need a token key for the query.
 if ($_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='blogs=allcat' || 
-    $_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='blogs=lastentries' || 
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=blogalldatas' || 
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=allblogs' || 
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=search' ||
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=allusersmin' || 
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='comments=allcomments' || 
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=login' ||
-    $_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='users=alluserurl' ||
-    $_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='users=allusersmin' ||
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=ins' ||
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=usernameid' ||
-    $_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=oneuser') {
+$_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='blogs=lastentries' || 
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=blogalldatas' || 
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=allblogs' || 
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='blogs=search' ||
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=allusersmin' || 
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='comments=allcomments' || 
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=login' ||
+$_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='users=alluserurl' ||
+$_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='users=allusersmin' ||
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=ins' ||
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=usernameid' ||
+$_SERVER['REQUEST_METHOD']=='POST' && $_SERVER['QUERY_STRING']=='users=oneuser') {
     return true;
 }
 

@@ -14,6 +14,7 @@ if (isset($_SESSION['delete_user']) || isset($_SESSION['nohaveentrie'])) {
 <div class="row m-0 p-0 bg-white">
 <?php 
 $lastentries = api_get('none', '?blogs=lastentries');
+
     foreach ($lastentries as $entrie) {
         $entrieid=$entrie->entrieid;
         $entrietitle=$entrie->entrietitle;

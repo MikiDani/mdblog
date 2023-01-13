@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 1);
+date_default_timezone_set('Europe/Budapest');
 session_start();
 
 if (isset($_GET['inc'])) { $_SESSION['inc']=$_GET['inc']; }

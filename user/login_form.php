@@ -10,11 +10,11 @@ if (isset($_SESSION['token_error'])) {
         <h3 class="text-title p-2 rounded-top"><span class="loginicon"><img src="img/icons/login.svg" width="25px" alt="icon"></span>Login</h3>
         <div class="mb-1 p-2">
             <label class="form-label" for="login_usernameoremail">Username or email address</label>
-            <input autocomplete="off" class="form-control" type="text" id="login_usernameoremail" name="login_usernameoremail" value="<?php echo login_usernameoremail(); ?>">
+            <input autocomplete="off" class="form-control" type="text" id="login_usernameoremail" name="login_usernameoremail" value="<?php echo login_usernameoremail(); ?>" placeholder="username or email">
         </div>
         <div class="mb-1 p-2">
             <label class="form-label" for="login_password">Password</label>
-            <input class="form-control" type="password" id="login_password" name="login_password" value="<?php echo login_password(); ?>">
+            <input class="form-control" type="password" id="login_password" name="login_password" value="<?php echo login_password(); ?>" placeholder="password">
         </div>
         <div class="form-check m-2">
             <input class="form-check-input" type="checkbox" id="login_check" name="login_check" <?php echo login_check(); ?>>

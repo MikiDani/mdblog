@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include_once "backend/session_url.php";
 include_once "function_includes.php";
 

@@ -15,19 +15,19 @@
         <h3 class="text-title p-2 rounded-top"><span class="registrationicon"><img src="img/icons/registration.svg" width="25px" alt="icon"></span>Registration</h3>
         <div class="mb-1 p-2">
             <label class="form-label" for="registration_username">Username</label>
-            <input class="form-control" autocomplete="off" type="text" id="registration_username" name="registration_username" value="<?php echo profil_session_write('registration_username'); ?>">
+            <input class="form-control" autocomplete="off" type="text" id="registration_username" name="registration_username" value="<?php echo profil_session_write('registration_username'); ?>" placeholder="username">
         </div>
         <div class="mb-1 p-2">
             <label class="form-label" for="registration_useremail">Email</label>
-            <input class="form-control" autocomplete="off" type="text" id="registration_useremail" name="registration_useremail" value="<?php echo profil_session_write('registration_useremail'); ?>">
+            <input class="form-control" autocomplete="off" type="text" id="registration_useremail" name="registration_useremail" value="<?php echo profil_session_write('registration_useremail'); ?>" placeholder="email">
         </div>
         <div class="mb-1 p-2">
             <label class="form-label" for="registration_password">Password</label>
-            <input class="form-control" type="password" id="registration_password" name="registration_password" value="<?php echo profil_session_write('registration_password'); ?>">
+            <input class="form-control" type="password" id="registration_password" name="registration_password" value="<?php echo profil_session_write('registration_password'); ?>" placeholder="password">
         </div>
         <div class="mb-1 p-2">
             <label class="form-label" for="registration_repassword">Repeat password</label>
-            <input class="form-control" type="password" id="registration_repassword" name="registration_repassword" value="<?php echo profil_session_write('registration_repassword'); ?>">
+            <input class="form-control" type="password" id="registration_repassword" name="registration_repassword" value="<?php echo profil_session_write('registration_repassword'); ?>" placeholder="repeat password">
         </div>
         <div class="form-check m-2">
             <input class="form-check-input" type="checkbox" id="registration_check" name="registration_check" <?php echo registracion_check(); ?>>

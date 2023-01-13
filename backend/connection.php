@@ -3,8 +3,7 @@
 $username = "root";
 $password = "";
 
-$pdo = new PDO ("mysql:host=localhost;dbname=backend", $username, $password);
+$pdo = new PDO ("mysql:host=localhost;dbname=mdblog", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
-//$pdo = new PDO ("mysql:host=$servername;dbname=myDB", $username, $password);
-
+//$pdo->query("SET NAMES utf8");
 ?>

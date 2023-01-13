@@ -1,4 +1,4 @@
-seged/
 img/blogbg/
-SQL/
 
+backend/connection.php
+backend/session_url.php
