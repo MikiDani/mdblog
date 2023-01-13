@@ -18,7 +18,7 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | users         | blogbody      | blogentries       | blogcomments  |
 | ------------- |:-------------:|:-----------------:|:-------------:|
 |id 			|blogid		    |entrieid           |commentid      |
-|username		|userid			| blogid            │ userid         |
+|username		|userid			|blogid             |userid         |
 |useremail		|blogname		|entrietitle	    |entrieid       |
 |userpassword	|blogtitle		|entriebody			|commenttext    |
 |userrank		|categoryid		|entrieepoch		|commentepoch   |
@@ -28,22 +28,19 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 # REST API Endpoints:
 
 ## USERS
-
-| ?users=login               | POST        |      | add user token key                    |
-|                              required inputs: { "usernameoremail", "userpassword" }
-| ?users=ins                 | POST        |      | add user in the table.       |
-|                              required inputs: { "username", "useremail", "userpassword" }
-| ?users=allusernames        | GET         |      | returns it all user names.
-| ?users=datas               | GET         |  Y   | returns it the user datas who owns the token.
-| ?users=allusers            | GET         |  Y   | returns it all user datas.
-| ?users=delalltoken         | GET         |  Y   | tokens table truncate.
-| ?users=allusersmin         | POST        |      | returns it username, useremail, blogid, blogname.
-| ?users=mod                 | POST        |  Y   | add user.
-| ?users=del                 | POST        |  Y   | delet user by token.
-| ?users=allcat              | GET         |  Y   | returns it all user datas.
-| ?users=oneuser             | POST        |      | returns user datas. Based on userid.
-| ?users=rankmod             | POST        |  Y   | When the user is admin, the rank of other users can be changed.
-|                              required inputs: { "userid", "userrank" }
+| ------------- |:-------------:|:-----------------:|:-------------:|
+| ?users=login               | POST        |      | add user token key |
+| ?users=ins                 | POST        |      | add user in the table. |
+| ?users=allusernames        | GET         |      | returns it all user names. |
+| ?users=datas               | GET         |  Y   | returns it the user datas who owns the token. |
+| ?users=allusers            | GET         |  Y   | returns it all user datas. |
+| ?users=delalltoken         | GET         |  Y   | tokens table truncate. |
+| ?users=allusersmin         | POST        |      | returns it username, useremail, blogid, blogname. |
+| ?users=mod                 | POST        |  Y   | add user. |
+| ?users=del                 | POST        |  Y   | delet user by token. |
+| ?users=allcat              | GET         |  Y   | returns it all user datas. |
+| ?users=oneuser             | POST        |      | returns user datas. Based on userid. |
+| ?users=rankmod             | POST        |  Y   | When the user is admin, the rank of other users can be changed. |
 
 ------------------------------
 | ?users=login  | responses  |
