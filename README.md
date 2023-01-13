@@ -44,15 +44,14 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | ?users=oneuser             | POST        |      | returns user datas. Based on userid. |
 | ?users=rankmod             | POST        |  Y   | When the user is admin, the rank of other users can be changed. |
 
-------------------------------<br>
-| ?users=login  | responses  |<br>
-|----------------------------|<br>
-| 200   Ok! Token code back  |<br>
-| 201   Ok! Inserted         |<br>
-| 408   Request Timeout      |<br>
-| 401   Unautorized          |<br>
-| 400   Bad Request          |<br>
-------------------------------<br>
+
+| Status Codes  |
+| -------------------------- |
+| 200   Ok! Token code back  |
+| 201   Ok! Inserted         |
+| 408   Request Timeout      |
+| 401   Unautorized          |
+| 400   Bad Request          |
 
 ## BLOGS:
 
