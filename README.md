@@ -18,7 +18,7 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | users         | blogbody      | blogentries       | blogcomments  |
 | ------------- |:-------------:|:-----------------:|:-------------:|
 |id 			|blogid		    |entrieid           |commentid      |
-|username		|userid			|blogid             │userid         |
+|username		|userid			| blogid            │ userid         |
 |useremail		|blogname		|entrietitle	    |entrieid       |
 |userpassword	|blogtitle		|entriebody			|commenttext    |
 |userrank		|categoryid		|entrieepoch		|commentepoch   |
