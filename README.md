@@ -54,40 +54,33 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | 400   Bad Request          |
 
 ## BLOGS:
-
-| ?blogs=blogalldatas        | POST        |      | returns all data from the user's blog.
-| ?blogs=allcat              | GET         |      | return it all blog categories.
-| ?blogs=lastentries         | GET         |      | return it 5 lastest entrie.
-| ?blogs=userblogdatas       | POST        |  Y   | returns the blogbody data. If it doesn't exist, create it.
-| ?blogs=newentrie           | POST        |  Y   | insert new entrie.
-|                              required inputs: { "blogid", "entrietitle", "entriebody" }
-| ?blogs=getallentries       | POST        |  Y   | return all entries in blog
-|                              required input:  { "blogid" }
-| ?blogs=getoneentrie        | POST        |  Y   | return one entrie datas.
-|                              required input:  { "entrieid" }
-| ?blogs=mod                 | POST        |  Y   | universal data modification endpoint.
-                               required inputs: { "tabledatas": {"tablename", "idkeyname", "idvalue"}, "celldatas": { "key": "value", listing... } }
-| ?blogs=del                 | POST        |  Y   | delete data 
-|                              required inputs:    { "tablename", "idkeyname":, "idvalue" }
-| ?blogs=allblogs            | POST        |      | return it all blogsbody.
-|                              possibility:     { "orderby", "filterkey", "filtervalue" }
-| ?blogs=search              | POST        |      | searches for entries based on text.
-|                              required input:  { "input", "location" }
+| Query | Method | Token? | What is it doing |
+| ------------- |:-------------:|:-----------------:|:-------------:|
+| ?blogs=blogalldatas        | POST        |      | returns all data from the user's blog. |
+| ?blogs=allcat              | GET         |      | return it all blog categories. |
+| ?blogs=lastentries         | GET         |      | return it 5 lastest entrie. |
+| ?blogs=userblogdatas       | POST        |  Y   | returns the blogbody data. If it doesn't exist, create it. |
+| ?blogs=newentrie           | POST        |  Y   | insert new entrie. |
+| ?blogs=getallentries       | POST        |  Y   | return all entries in blog. |
+| ?blogs=getoneentrie        | POST        |  Y   | return one entrie datas. |
+| ?blogs=mod                 | POST        |  Y   | universal data modification endpoint. |
+| ?blogs=del                 | POST        |  Y   | delete data. |
+| ?blogs=allblogs            | POST        |      | return it all blogsbody. |
+| ?blogs=search              | POST        |      | searches for entries based on text. |
 
 ## COMMENTS:
-
-| ?comments=allcomments      | POST        |      | return it all blogsbody.
-|                              required inputs:    { "entrieid" }
-| ?comments=newcomment       | POST        |  Y   | insert a new comment.
-|                              required input: { "userid", "entrieid", "commenttext" }
-| ?comments=delcomment       | POST        |  Y   | delete comment.
-|                              required input: { "commentid" }
+| Query | Method | Token? | What is it doing |
+| ------------- |:-------------:|:-----------------:|:-------------:|
+| ?comments=allcomments      | POST        |      | return it all blogsbody. |
+| ?comments=newcomment       | POST        |  Y   | insert a new comment. |
+| ?comments=delcomment       | POST        |  Y   | delete comment. |
 
 ### TEST USERS:
-
-admin			admin@mdblog.com		123456
-Dániel			daniel@mdblog.com		abcdef
-SteveJonson		stevejonson@mdblog.com	123456
-DougieAdams		adams@mdblog.com		123456
-Charles			charles@mdblog.com		123456
-Mike95			mike95@freeweb.com		123456
+| username    | email         | password          |
+| ----------- |:-------------:|:-----------------:|
+| admin       | admin@mdblog.com		 | 123456 |
+| Dániel      | daniel@mdblog.com		 | abcdef |
+| SteveJonson |	stevejonson@mdblog.com	 | 123456 |
+| DougieAdams |	adams@mdblog.com		 | 123456 |
+| Charles     |	charles@mdblog.com		 | 123456 |
+| Mike95      |	mike95@freeweb.com		 | 123456 |
