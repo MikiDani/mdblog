@@ -28,6 +28,7 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 # REST API Endpoints:
 
 ## USERS
+| Query | Method | Token? | whats make | What is it doing |
 | ------------- |:-------------:|:-----------------:|:-------------:|
 | ?users=login               | POST        |      | add user token key |
 | ?users=ins                 | POST        |      | add user in the table. |
