@@ -4,6 +4,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+//echo "query: ".$_SERVER['QUERY_STRING'];
+
 // you don't need a token key for the query.
 if ($_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='blogs=allcat' || 
 $_SERVER['REQUEST_METHOD']=='GET' && $_SERVER['QUERY_STRING']=='blogs=lastentries' || 
@@ -42,5 +44,5 @@ if ($row=$stmt->fetch(PDO::FETCH_ASSOC)) {
 }
 
 $data=['response_text' => 'Unautorized', 'status_code' => 401];
-echo json_encode($data); 
+echo json_encode($data);
 die();

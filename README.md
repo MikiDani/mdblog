@@ -33,7 +33,7 @@ Blog oldal: Itt minden Blognot külön url címen tudunk elérni. Ez azért jó,
 | ------------- |:-------------:|:-----------------:|:----------------:|
 | ?users=login               | POST        |      | add user token key |
 | ?users=ins                 | POST        |      | add user in the table. |
-| ?users=allusernames        | GET         |      | returns it all user names. |
+| ?users=alluserurl          | GET         |      | returns it all user names. |
 | ?users=datas               | GET         |  Y   | returns it the user datas who owns the token. |
 | ?users=allusers            | GET         |  Y   | returns it all user datas. |
 | ?users=delalltoken         | GET         |  Y   | tokens table truncate. |

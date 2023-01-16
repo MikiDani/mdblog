@@ -28,6 +28,7 @@ if( !function_exists('apache_request_headers') ) {
 }
 
 // CORS
+header("Access-Control-Allow-Methods: *");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header("Content-Type:application/json");

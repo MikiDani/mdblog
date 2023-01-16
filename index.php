@@ -1,6 +1,11 @@
 <?php
 ini_set('display_errors', 1);
 date_default_timezone_set('Europe/Budapest');
+
+header("Access-Control-Allow-Methods: *");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
 session_start();
 
 if (isset($_GET['inc'])) { $_SESSION['inc']=$_GET['inc']; }

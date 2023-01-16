@@ -19,7 +19,7 @@ if (isset($_POST['filterline_submit'])) {
     $_POST['filterline_arrangment']=='Last entrie' ? $orderby = 'maxentrieepoch DESC' : false ;
     $_POST['filterline_arrangment']=='Last entrie DESC' ? $orderby = 'maxentrieepoch' : false ;
 
-    $filterdata = ["orderby" => $orderby, "filterkey" => "categoryid", "filtervalue" => $categoryid ];
+    $filterdata = array("orderby" => $orderby, "filterkey" => "categoryid", "filtervalue" => $categoryid);
 }
 
 $blogslist = api_post('none','?blogs=allblogs', $filterdata, false);
@@ -39,7 +39,7 @@ $blogslist = api_post('none','?blogs=allblogs', $filterdata, false);
 </form>
 <div class="col-12 m-0 p-0 mb-3 bg-light rounded-bottom">
 <?php
-if ($blogslist==Null) {
+if ($blogslist == Null) {
     echo "<div class='form-text text-danger text-center mb-1 bg-light'><strong>No results!</strong></div>";
 } else {
     echo "<div class='row col-12 m-0 p-0 mt-3'><hr></div>";

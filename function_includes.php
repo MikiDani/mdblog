@@ -1,5 +1,8 @@
 <?php
 /*** Functions ***/
+header("Access-Control-Allow-Methods: *");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 function empty_check ($value) {
     $back=null;
@@ -41,24 +44,36 @@ function api_get($token, $request) {
 
 function api_post($token, $request, $data, $backswitch) {
     //echo "token: $token<br>"; echo "request: $request<br>"; print_r($data); echo "encode: ".json_encode($data)."<br>";
+    //echo "URL: ".$_SESSION['url'].$request;
+
     $headers = array(
         "token: $token", 
         "Content-Type: application/json",
-        "Accept: application/json"
+        "Accept: application/json",
+        "Access-Control-Allow-Methods: *",
+        "Access-Control-Allow-Origin: *",
+        "Access-Control-Allow-Headers: *"
     );
+
     $options = array(
-        'http' => array(
-            'method' => 'POST',
-            'header' => $headers,
-            'content' => json_encode($data)
+        "ssl" => array(
+            "verify_peer"=>false,
+            "verify_peer_name"=>false,
+        ),
+        "http" => array(
+            "method" => "POST",
+            "header" => $headers,
+            "content" => json_encode($data)
         )
     );
+
     $context = stream_context_create($options);
     $result = file_get_contents($_SESSION['url'].$request, false, $context);
+
+    //phpinfo();
+
     $response = json_decode($result);
     
-    //echo "<br>1--------<br>"; print_r($result); echo "<br>2--------<br>"; print_r($response); die('END!!!');
-
     if ($backswitch) { return $response; }
     if ($response->status_code=='200' || $response->status_code=='201') {
         return ($response->response_text);

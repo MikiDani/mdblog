@@ -38,7 +38,7 @@ imglink                 bgimg
 |                                  required inputs: { "usernameoremail", "userpassword" }
 | ?users=ins                 | POST        |      | add user in the table.       |
 |                                  required inputs: { "username", "useremail", "userpassword" }
-| ?users=allusernames        | GET         |      | returns it all user names.
+| ?users=alluserurl          | GET         |      | returns it all user names.
 | ?users=datas               | GET         |  Y   | returns it the user datas who owns the token.
 | ?users=allusers            | GET         |  Y   | returns it all user datas.
 | ?users=delalltoken         | GET         |  Y   | tokens table truncate.
